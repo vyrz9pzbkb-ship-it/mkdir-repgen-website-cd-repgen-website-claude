@@ -1732,6 +1732,44 @@ body.menu-open {
   color: var(--color-white);
 }
 
+/* Botão "voltar ao topo" */
+.back-to-top {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  z-index: 150;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--color-navy-900);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s, background var(--transition);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--color-navy-800);
+}
+
+.back-to-top svg {
+  width: 26px;
+  height: 26px;
+  color: var(--color-white);
+}
+
 /* Scroll fade-in animation */
 .fade-up {
   opacity: 0;
@@ -1836,5 +1874,17 @@ body.menu-open {
   .whatsapp-float svg {
     width: 26px;
     height: 26px;
+  }
+
+  .back-to-top {
+    left: 16px;
+    bottom: 16px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .back-to-top svg {
+    width: 24px;
+    height: 24px;
   }
 }
