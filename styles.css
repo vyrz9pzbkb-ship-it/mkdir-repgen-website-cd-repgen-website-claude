@@ -1371,6 +1371,17 @@ body.menu-open {
   color: var(--color-orange-400);
 }
 
+/* Variante para uso sobre fundo claro (ex: rodapé do artigo, dentro do .post-body) */
+.post-body .post-back {
+  color: var(--color-gray-700);
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.post-body .post-back:hover {
+  color: var(--color-orange-600);
+}
+
 .post-header h1 {
   color: var(--color-white);
   margin: 16px 0 12px;
