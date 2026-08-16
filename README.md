@@ -10,8 +10,9 @@ Site de uma página (one-page) para a **Repgen**, empresa de assessoria em segur
 ├── styles.css           # Estilos (paleta, layout, responsividade)
 ├── script.js             # Menu mobile, contador animado e formulário
 ├── assets/
-│   ├── logo.svg          # Logotipo placeholder (substitua pelo logo real)
-│   └── og-image.svg      # Imagem de compartilhamento (Open Graph)
+│   ├── logo-repgen.png    # Logotipo oficial completo (ícone + nome + tagline), usado como og:image
+│   ├── logo-header.png    # Recorte compacto do logo (ícone + nome), usado no cabeçalho e rodapé
+│   └── favicon.png        # Ícone da marca (apenas o símbolo), usado como favicon
 └── README.md
 ```
 
@@ -41,9 +42,9 @@ Você também pode simplesmente abrir o arquivo `index.html` no navegador (duplo
 
 - **Textos e dados de contato**: edite diretamente em `index.html` (endereço, telefone, e-mail, horário de atendimento).
 - **Números de destaque** (seção de confiança): os valores ficam no atributo `data-target` de cada `<span class="stat-number">` em `index.html` — atualize com os números reais da empresa.
-- **Cores**: a paleta está centralizada em variáveis CSS no topo de `styles.css` (`:root`), facilitando ajustes de tons de azul, marinho e dourado.
-- **Logo**: substitua `assets/logo.svg` pelo logotipo oficial da Repgen (mantenha o nome do arquivo ou atualize as referências em `index.html`).
-- **Imagem de compartilhamento (Open Graph)**: `assets/og-image.svg` é um placeholder. Para melhor compatibilidade com redes sociais (Facebook, LinkedIn, WhatsApp), recomenda-se gerar uma versão em **PNG/JPG de 1200×630px** e apontar a tag `og:image` em `index.html` para o novo arquivo.
+- **Cores**: a paleta está centralizada em variáveis CSS no topo de `styles.css` (`:root`), facilitando ajustes de tons de laranja (cor da marca) e do neutro escuro (charcoal).
+- **Logo**: os arquivos em `assets/` já usam a arte oficial da Repgen (fundo transparente, recortada do logotipo enviado). Se receber uma versão vetorial (SVG/AI) da marca, é recomendável substituir os PNGs por ela para melhor nitidez em telas de alta resolução.
+- **Imagem de compartilhamento (Open Graph)**: a tag `og:image` aponta para `assets/logo-repgen.png`. Para melhor compatibilidade com redes sociais (Facebook, LinkedIn, WhatsApp), o ideal é uma imagem de **1200×630px**; se quiser uma arte dedicada (com fundo sólido em vez de transparente), crie um novo arquivo e atualize a tag em `index.html`.
 - **Formulário de contato**: atualmente o formulário só valida os campos e exibe uma mensagem de confirmação no navegador (não envia e-mails). Para receber as mensagens de verdade, integre com um serviço como Formspree, EmailJS, Netlify Forms, ou um backend próprio, e ajuste o `fetch`/envio em `script.js`.
 
 ## Deploy no GitHub Pages

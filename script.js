@@ -86,7 +86,7 @@
 
       // TODO: integrar com backend/serviço de e-mail real.
       formFeedback.textContent = "Mensagem recebida! Em breve nossa equipe entrará em contato.";
-      formFeedback.style.color = "#1f6feb";
+      formFeedback.style.color = "#974c35";
       contactForm.reset();
     });
   }
