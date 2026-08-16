@@ -38,6 +38,23 @@
     });
   }
 
+  // Logos das seguradoras: se o arquivo em logos/ ainda não existir, mostra o nome em texto
+  document.querySelectorAll(".insurer-logo").forEach(function (img) {
+    function showFallback() {
+      img.style.display = "none";
+      var fallback = img.nextElementSibling;
+      if (fallback && fallback.classList.contains("insurer-fallback")) {
+        fallback.style.display = "block";
+      }
+    }
+    // A imagem pode já ter falhado antes deste script rodar (ex: 404 rápido em localhost).
+    if (img.complete) {
+      if (img.naturalWidth === 0) showFallback();
+    } else {
+      img.addEventListener("error", showFallback, { once: true });
+    }
+  });
+
   // Animação de entrada ao rolar a página (fade + slide up)
   var fadeEls = document.querySelectorAll(".fade-up");
 

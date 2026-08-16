@@ -28,6 +28,7 @@ Site institucional multipágina para a **Repgen**, assessoria em seguros, resseg
 │   ├── logo-header.png                           # Recorte do logo para cabeçalho/rodapé
 │   ├── favicon.png                                # Ícone da marca (favicon)
 │   └── img/                                      # Imagens de banner (serviços) e thumbnails (blog)
+├── logos/                                        # Logos reais das seguradoras (vazia — ver logos/README.md)
 └── README.md
 ```
 
@@ -79,11 +80,7 @@ O diretório de pessoas usa dados de exemplo. **Priscilla Daltro** (Desenvolvime
 
 ### 3. Logos das seguradoras (`seguradoras.html`)
 
-A grade de seguradoras parceiras hoje exibe apenas o nome da empresa em texto estilizado (`.insurer-card`). Para usar logos reais:
-
-1. Adicione os arquivos de logo em `assets/img/seguradoras/`.
-2. Substitua o texto dentro de cada `.insurer-card` por uma tag `<img>` com o `alt` correspondente ao nome da seguradora.
-3. Ajuste o CSS de `.insurer-card img` em `styles.css` se for necessário controlar altura/proporção dos logos.
+Cada card já está pronto para exibir um logo — basta soltar o arquivo na pasta `logos/` na raiz do projeto, com o nome exato listado em `logos/README.md` (ex. `logos/axa.png`, `logos/chubb.png`). Enquanto o arquivo não existir, o card mostra automaticamente o nome da empresa em texto (fallback via JavaScript em `script.js`, sem precisar editar nenhum HTML). Assim que o PNG correto for adicionado à pasta, ele passa a aparecer no lugar do texto no próximo carregamento da página.
 
 ### 4. Imagens de banner (serviços e blog)
 
