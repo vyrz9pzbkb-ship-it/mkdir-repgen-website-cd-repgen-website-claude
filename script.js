@@ -203,8 +203,15 @@
       modalTitle.textContent = title;
       modalDept.textContent = dept;
       modalEmailBtn.href = "mailto:" + email;
-      modalWhatsBtn.href = "https://wa.me/55" + phone.replace(/\D/g, "") + "?text=Ol%C3%A1!";
-      modalContactInfo.textContent = phone + " · " + email;
+
+      if (phone) {
+        modalWhatsBtn.href = "https://wa.me/55" + phone.replace(/\D/g, "") + "?text=Ol%C3%A1!";
+        modalWhatsBtn.style.display = "";
+        modalContactInfo.textContent = phone + " · " + email;
+      } else {
+        modalWhatsBtn.style.display = "none";
+        modalContactInfo.textContent = email;
+      }
 
       modalOverlay.classList.add("open");
       document.body.classList.add("menu-open");
@@ -217,11 +224,11 @@
 
     personCards.forEach(function (card) {
       card.addEventListener("click", function (event) {
-        if (event.target.closest(".whatsapp-pill")) return;
+        if (event.target.closest(".card-action")) return;
         openModal(card);
       });
       card.addEventListener("keydown", function (event) {
-        if (event.target.closest(".whatsapp-pill")) return;
+        if (event.target.closest(".card-action")) return;
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
           openModal(card);

@@ -1180,26 +1180,21 @@ body.menu-open {
   margin-bottom: 14px;
 }
 
-.person-card .whatsapp-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--color-green-600);
-  color: var(--color-white);
-  font-size: 0.82rem;
-  font-weight: 600;
-  padding: 8px 16px;
-  border-radius: 999px;
-  transition: background var(--transition);
+.card-actions {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 
-.person-card .whatsapp-pill:hover {
-  background: #188a45;
-}
-
-.person-card .whatsapp-pill svg {
+.card-actions .card-action svg {
   width: 15px;
   height: 15px;
+}
+
+.contact-line {
+  font-size: 0.82rem;
+  color: var(--color-gray-500);
+  margin: 0;
 }
 
 /* Person detail modal */
