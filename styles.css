@@ -1735,17 +1735,13 @@ body.menu-open {
 /* Scroll fade-in animation */
 .fade-up {
   opacity: 0;
-  transform: translateY(28px);
+  transform: translateY(40px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .fade-up.in-view {
   opacity: 1;
   transform: translateY(0);
-}
-
-.fade-up-stagger.in-view > * {
-  transition-delay: calc(var(--stagger-index, 0) * 80ms);
 }
 
 @media (prefers-reduced-motion: reduce) {

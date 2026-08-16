@@ -73,6 +73,21 @@
   // Animação de entrada ao rolar a página (fade + slide up)
   var fadeEls = document.querySelectorAll(".fade-up");
 
+  // Escalona um pequeno atraso entre cards de um mesmo grupo (ex: cards de um
+  // grid, itens de uma lista) para que não apareçam todos no mesmo instante.
+  var staggerCounters = new Map();
+  fadeEls.forEach(function (el) {
+    var group = el.parentElement;
+    // Se o elemento é filho único do seu pai (ex: <li><a class="fade-up">),
+    // sobe mais um nível para agrupar com os irmãos "reais" (ex: outros <li>).
+    if (group && group.children.length === 1 && group.parentElement) {
+      group = group.parentElement;
+    }
+    var index = staggerCounters.get(group) || 0;
+    el.style.transitionDelay = (index * 0.1) + "s";
+    staggerCounters.set(group, index + 1);
+  });
+
   if (fadeEls.length && "IntersectionObserver" in window) {
     var fadeObserver = new IntersectionObserver(
       function (entries) {
