@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quem é Quem na Repgen | Diretório de Equipe</title>
+<meta name="description" content="Conheça as pessoas por trás de cada departamento da Repgen e fale diretamente com o especialista certo para o seu negócio.">
+<meta name="author" content="Repgen">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Quem é Quem na Repgen | Diretório de Equipe">
+<meta property="og:description" content="Conheça as pessoas por trás de cada departamento da Repgen e fale diretamente com o especialista certo para o seu negócio.">
+<meta property="og:image" content="assets/logo-repgen.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header" id="topo">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="Repgen - página inicial">
+      <img src="assets/logo-header.png" alt="Repgen" class="logo-img">
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="fullNav" aria-label="Abrir menu de navegação">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="full-nav" id="fullNav" aria-label="Navegação principal">
+  <button class="menu-close" id="menuClose" aria-label="Fechar menu de navegação">&times;</button>
+  <ul class="full-nav-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="linhas-negocio.html">Linhas de Negócio</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="seguradoras.html">Parceiros</a></li>
+        <li><a href="seja-parceiro.html">Seja Parceiro</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+  </ul>
+  <!-- SUBSTITUIR: número real -->
+  <a href="https://wa.me/55XXXXXXXXXXX" class="full-nav-cta" target="_blank" rel="noopener">Fale Conosco</a>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-inner">
+      <span class="pill-badge">👥 35 pessoas · 12 departamentos</span>
+      <h1 id="hero-title">Quem é Quem na <span class="text-orange">Repgen</span></h1>
+      <p class="hero-subtitle">Conheça as pessoas por trás de cada departamento da Repgen e fale diretamente com o especialista certo para o seu negócio.</p>
+    </div>
+  </section>
+
+  <!-- DIRETÓRIO -->
+  <section class="section" id="peopleContainer">
+    <div class="container">
+      <div class="search-bar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="peopleSearch" placeholder="Buscar por nome, cargo ou departamento...">
+      </div>
+      <div class="filter-pills">
+        <button type="button" class="filter-pill active" data-filter="todos">Todos</button>
+        <button type="button" class="filter-pill" data-filter="diretoria">Diretoria</button>
+        <button type="button" class="filter-pill" data-filter="desenvolvimento-comercial">Desenvolvimento Comercial</button>
+        <button type="button" class="filter-pill" data-filter="sinistros">Sinistros</button>
+        <button type="button" class="filter-pill" data-filter="financeiro">Financeiro</button>
+      </div>
+
+      <!-- SUBSTITUIR: dados reais da equipe. Priscilla Daltro é fornecida como exemplo real (nome, cargo, telefone e e-mail); os demais nomes, cargos, telefones e e-mails abaixo são placeholders fictícios. -->
+      <div class="dept-group" data-dept="diretoria">
+        <h2 class="dept-group-title">Diretoria — <span class="count">2 pessoas</span></h2>
+        <div class="people-grid">
+          <div class="person-card" tabindex="0" role="button"
+            aria-label="Ver detalhes de Max Lima"
+            data-name="max lima" data-title="diretor de projetos e marketing" data-dept="diretoria"
+            data-name-display="Max Lima" data-title-display="Diretor de Projetos e Marketing" data-dept-display="Diretoria"
+            data-phone="(71) 90000-0001" data-email="maxlima@gruporepgen.com.br" data-initials="ML" data-palette="navy">
+            <span class="avatar palette-navy">ML</span>
+            <p class="name">Max Lima</p>
+            <p class="title">Diretor de Projetos e Marketing</p>
+            <div><span class="dept-tag">Diretoria</span></div>
+            <a href="https://wa.me/5571900000001?text=Ol%C3%A1!" class="whatsapp-pill" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.703 4.605 1.912 6.472L4 29l7.727-1.874A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.6c-1.98 0-3.833-.55-5.412-1.503l-.388-.23-4.59 1.113 1.135-4.474-.253-.398A9.56 9.56 0 0 1 5.4 15c0-5.85 4.75-10.6 10.601-10.6 5.85 0 10.6 4.75 10.6 10.6 0 5.85-4.75 10.6-10.6 10.6zm5.815-7.94c-.318-.159-1.884-.93-2.176-1.036-.292-.106-.505-.159-.717.16-.212.318-.823 1.036-1.01 1.248-.186.212-.372.239-.69.08-.318-.16-1.343-.495-2.558-1.577-.945-.843-1.583-1.884-1.768-2.202-.186-.318-.02-.49.14-.649.143-.142.318-.372.478-.558.159-.186.212-.318.318-.53.106-.212.053-.398-.027-.557-.08-.16-.717-1.728-.983-2.366-.259-.622-.522-.538-.717-.548-.186-.009-.398-.011-.611-.011-.212 0-.557.08-.849.398-.292.318-1.114 1.089-1.114 2.656 0 1.567 1.14 3.082 1.299 3.294.159.212 2.243 3.427 5.435 4.804.759.328 1.352.524 1.814.671.762.242 1.456.208 2.005.126.612-.091 1.884-.77 2.15-1.514.265-.744.265-1.382.186-1.514-.08-.133-.291-.212-.61-.371z"/></svg> Chamar no WhatsApp</a>
+          </div>
+          <div class="person-card" tabindex="0" role="button"
+            aria-label="Ver detalhes de Fernanda Souza"
+            data-name="fernanda souza" data-title="diretora de operações" data-dept="diretoria"
+            data-name-display="Fernanda Souza" data-title-display="Diretora de Operações" data-dept-display="Diretoria"
+            data-phone="(71) 90000-0002" data-email="fernandasouza@gruporepgen.com.br" data-initials="FS" data-palette="orange">
+            <span class="avatar palette-orange">FS</span>
+            <p class="name">Fernanda Souza</p>
+            <p class="title">Diretora de Operações</p>
+            <div><span class="dept-tag">Diretoria</span></div>
+            <a href="https://wa.me/5571900000002?text=Ol%C3%A1!" class="whatsapp-pill" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.703 4.605 1.912 6.472L4 29l7.727-1.874A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.6c-1.98 0-3.833-.55-5.412-1.503l-.388-.23-4.59 1.113 1.135-4.474-.253-.398A9.56 9.56 0 0 1 5.4 15c0-5.85 4.75-10.6 10.601-10.6 5.85 0 10.6 4.75 10.6 10.6 0 5.85-4.75 10.6-10.6 10.6zm5.815-7.94c-.318-.159-1.884-.93-2.176-1.036-.292-.106-.505-.159-.717.16-.212.318-.823 1.036-1.01 1.248-.186.212-.372.239-.69.08-.318-.16-1.343-.495-2.558-1.577-.945-.843-1.583-1.884-1.768-2.202-.186-.318-.02-.49.14-.649.143-.142.318-.372.478-.558.159-.186.212-.318.318-.53.106-.212.053-.398-.027-.557-.08-.16-.717-1.728-.983-2.366-.259-.622-.522-.538-.717-.548-.186-.009-.398-.011-.611-.011-.212 0-.557.08-.849.398-.292.318-1.114 1.089-1.114 2.656 0 1.567 1.14 3.082 1.299 3.294.159.212 2.243 3.427 5.435 4.804.759.328 1.352.524 1.814.671.762.242 1.456.208 2.005.126.612-.091 1.884-.77 2.15-1.514.265-.744.265-1.382.186-1.514-.08-.133-.291-.212-.61-.371z"/></svg> Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="dept-group" data-dept="desenvolvimento-comercial">
+        <h2 class="dept-group-title">Desenvolvimento Comercial — <span class="count">3 pessoas</span></h2>
+        <div class="people-grid">
+          <div class="person-card" tabindex="0" role="button"
+            aria-label="Ver detalhes de Priscilla Daltro"
+            data-name="priscilla daltro" data-title="comercial" data-dept="desenvolvimento-comercial"
+            data-name-display="Priscilla Daltro" data-title-display="Comercial" data-dept-display="Desenvolvimento Comercial"
+            data-phone="(71) 99150-3886" data-email="priscilladaltro@gruporepgen.com.br" data-initials="PD" data-palette="blue">
+            <span class="avatar palette-blue">PD</span>
+            <p class="name">Priscilla Daltro</p>
+            <p class="title">Comercial</p>
+            <div><span class="dept-tag">Desenvolvimento Comercial</span></div>
+            <a href="https://wa.me/5571991503886?text=Ol%C3%A1!" class="whatsapp-pill" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.703 4.605 1.912 6.472L4 29l7.727-1.874A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.6c-1.98 0-3.833-.55-5.412-1.503l-.388-.23-4.59 1.113 1.135-4.474-.253-.398A9.56 9.56 0 0 1 5.4 15c0-5.85 4.75-10.6 10.601-10.6 5.85 0 10.6 4.75 10.6 10.6 0 5.85-4.75 10.6-10.6 10.6zm5.815-7.94c-.318-.159-1.884-.93-2.176-1.036-.292-.106-.505-.159-.717.16-.212.318-.823 1.036-1.01 1.248-.186.212-.372.239-.69.08-.318-.16-1.343-.495-2.558-1.577-.945-.843-1.583-1.884-1.768-2.202-.186-.318-.02-.49.14-.649.143-.142.318-.372.478-.558.159-.186.212-.318.318-.53.106-.212.053-.398-.027-.557-.08-.16-.717-1.728-.983-2.366-.259-.622-.522-.538-.717-.548-.186-.009-.398-.011-.611-.011-.212 0-.557.08-.849.398-.292.318-1.114 1.089-1.114 2.656 0 1.567 1.14 3.082 1.299 3.294.159.212 2.243 3.427 5.435 4.804.759.328 1.352.524 1.814.671.762.242 1.456.208 2.005.126.612-.091 1.884-.77 2.15-1.514.265-.744.265-1.382.186-1.514-.08-.133-.291-.212-.61-.371z"/></svg> Chamar no WhatsApp</a>
+          </div>
+          <div class="person-card" tabindex="0" role="button"
+            aria-label="Ver detalhes de Juliana Prado"
+            data-name="juliana prado" data-title="executiva comercial" data-dept="desenvolvimento-comercial"
+            data-name-display="Juliana Prado" data-title-display="Executiva Comercial" data-dept-display="Desenvolvimento Comercial"
+            data-phone="(71) 90000-0004" data-email="julianaprado@gruporepgen.com.br" data-initials="JP" data-palette="navy">
+            <span class="avatar palette-navy">JP</span>
+            <p class="name">Juliana Prado</p>
+            <p class="title">Executiva Comercial</p>
+            <div><span class="dept-tag">Desenvolvimento Comercial</span></div>
+            <a href="https://wa.me/5571900000004?text=Ol%C3%A1!" class="whatsapp-pill" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.703 4.605 1.912 6.472L4 29l7.727-1.874A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.6c-1.98 0-3.833-.55-5.412-1.503l-.388-.23-4.59 1.113 1.135-4.474-.253-.398A9.56 9.56 0 0 1 5.4 15c0-5.85 4.75-10.6 10.601-10.6 5.85 0 10.6 4.75 10.6 10.6 0 5.85-4.75 10.6-10.6 10.6zm5.815-7.94c-.318-.159-1.884-.93-2.176-1.036-.292-.106-.505-.159-.717.16-.212.318-.823 1.036-1.01 1.248-.186.212-.372.239-.69.08-.318-.16-1.343-.495-2.558-1.577-.945-.843-1.583-1.884-1.768-2.202-.186-.318-.02-.49.14-.649.143-.142.318-.372.478-.558.159-.186.212-.318.318-.53.106-.212.053-.398-.027-.557-.08-.16-.717-1.728-.983-2.366-.259-.622-.522-.538-.717-.548-.186-.009-.398-.011-.611-.011-.212 0-.557.08-.849.398-.292.318-1.114 1.089-1.114 2.656 0 1.567 1.14 3.082 1.299 3.294.159.212 2.243 3.427 5.435 4.804.759.328 1.352.524 1.814.671.762.242 1.456.208 2.005.126.612-.091 1.884-.77 2.15-1.514.265-.744.265-1.382.186-1.514-.08-.133-.291-.212-.61-.371z"/></svg> Chamar no WhatsApp</a>
+          </div>
+          <div class="person-card" tabindex="0" role="button"
+            aria-label="Ver detalhes de Rafael Nunes"
+            data-name="rafael nunes" data-title="executivo comercial" data-dept="desenvolvimento-comercial"
+            data-name-display="Rafael Nunes" data-title-display="Executivo Comercial" data-dept-display="Desenvolvimento Comercial"
+            data-phone="(71) 90000-0005" data-email="rafaelnunes@gruporepgen.com.br" data-initials="RN" data-palette="orange">
+            <span class="avatar palette-orange">RN</span>
+            <p class="name">Rafael Nunes</p>
+            <p class="title">Executivo Comercial</p>
+            <div><span class="dept-tag">Desenvolvimento Comercial</span></div>
+            <a href="https://wa.me/5571900000005?text=Ol%C3%A1!" class="whatsapp-pill" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.703 4.605 1.912 6.472L4 29l7.727-1.874A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.6c-1.98 0-3.833-.55-5.412-1.503l-.388-.23-4.59 1.113 1.135-4.474-.253-.398A9.56 9.56 0 0 1 5.4 15c0-5.85 4.75-10.6 10.601-10.6 5.85 0 10.6 4.75 10.6 10.6 0 5.85-4.75 10.6-10.6 10.6zm5.815-7.94c-.318-.159-1.884-.93-2.176-1.036-.292-.106-.505-.159-.717.16-.212.318-.823 1.036-1.01 1.248-.186.212-.372.239-.69.08-.318-.16-1.343-.495-2.558-1.577-.945-.843-1.583-1.884-1.768-2.202-.186-.318-.02-.49.14-.649.143-.142.318-.372.478-.558.159-.186.212-.318.318-.53.106-.212.053-.398-.027-.557-.08-.16-.717-1.728-.983-2.366-.259-.622-.522-.538-.717-.548-.186-.009-.398-.011-.611-.011-.212 0-.557.08-.849.398-.292.318-1.114 1.089-1.114 2.656 0 1.567 1.14 3.082 1.299 3.294.159.212 2.243 3.427 5.435 4.804.759.328 1.352.524 1.814.671.762.242 1.456.208 2.005.126.612-.091 1.884-.77 2.15-1.514.265-.744.265-1.382.186-1.514-.08-.133-.291-.212-.61-.371z"/></svg> Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="dept-group" data-dept="sinistros">
+        <h2 class="dept-group-title">Sinistros — <span class="count">2 pessoas</span></h2>
+        <div class="people-grid">
+          <div class="person-card" tabindex="0" role="button"
+            aria-label="Ver detalhes de Camila Rocha"
+            data-name="camila rocha" data-title="analista de sinistros" data-dept="sinistros"
+            data-name-display="Camila Rocha" data-title-display="Analista de Sinistros" data-dept-display="Sinistros"
+            data-phone="(71) 90000-0006" data-email="camilarocha@gruporepgen.com.br" data-initials="CR" data-palette="blue">
+            <span class="avatar palette-blue">CR</span>
+            <p class="name">Camila Rocha</p>
+            <p class="title">Analista de Sinistros</p>
+            <div><span class="dept-tag">Sinistros</span></div>
+            <a href="https://wa.me/5571900000006?text=Ol%C3%A1!" class="whatsapp-pill" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.703 4.605 1.912 6.472L4 29l7.727-1.874A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.6c-1.98 0-3.833-.55-5.412-1.503l-.388-.23-4.59 1.113 1.135-4.474-.253-.398A9.56 9.56 0 0 1 5.4 15c0-5.85 4.75-10.6 10.601-10.6 5.85 0 10.6 4.75 10.6 10.6 0 5.85-4.75 10.6-10.6 10.6zm5.815-7.94c-.318-.159-1.884-.93-2.176-1.036-.292-.106-.505-.159-.717.16-.212.318-.823 1.036-1.01 1.248-.186.212-.372.239-.69.08-.318-.16-1.343-.495-2.558-1.577-.945-.843-1.583-1.884-1.768-2.202-.186-.318-.02-.49.14-.649.143-.142.318-.372.478-.558.159-.186.212-.318.318-.53.106-.212.053-.398-.027-.557-.08-.16-.717-1.728-.983-2.366-.259-.622-.522-.538-.717-.548-.186-.009-.398-.011-.611-.011-.212 0-.557.08-.849.398-.292.318-1.114 1.089-1.114 2.656 0 1.567 1.14 3.082 1.299 3.294.159.212 2.243 3.427 5.435 4.804.759.328 1.352.524 1.814.671.762.242 1.456.208 2.005.126.612-.091 1.884-.77 2.15-1.514.265-.744.265-1.382.186-1.514-.08-.133-.291-.212-.61-.371z"/></svg> Chamar no WhatsApp</a>
+          </div>
+          <div class="person-card" tabindex="0" role="button"
+            aria-label="Ver detalhes de Diego Martins"
+            data-name="diego martins" data-title="coordenador de sinistros" data-dept="sinistros"
+            data-name-display="Diego Martins" data-title-display="Coordenador de Sinistros" data-dept-display="Sinistros"
+            data-phone="(71) 90000-0007" data-email="diegomartins@gruporepgen.com.br" data-initials="DM" data-palette="navy">
+            <span class="avatar palette-navy">DM</span>
+            <p class="name">Diego Martins</p>
+            <p class="title">Coordenador de Sinistros</p>
+            <div><span class="dept-tag">Sinistros</span></div>
+            <a href="https://wa.me/5571900000007?text=Ol%C3%A1!" class="whatsapp-pill" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.703 4.605 1.912 6.472L4 29l7.727-1.874A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.6c-1.98 0-3.833-.55-5.412-1.503l-.388-.23-4.59 1.113 1.135-4.474-.253-.398A9.56 9.56 0 0 1 5.4 15c0-5.85 4.75-10.6 10.601-10.6 5.85 0 10.6 4.75 10.6 10.6 0 5.85-4.75 10.6-10.6 10.6zm5.815-7.94c-.318-.159-1.884-.93-2.176-1.036-.292-.106-.505-.159-.717.16-.212.318-.823 1.036-1.01 1.248-.186.212-.372.239-.69.08-.318-.16-1.343-.495-2.558-1.577-.945-.843-1.583-1.884-1.768-2.202-.186-.318-.02-.49.14-.649.143-.142.318-.372.478-.558.159-.186.212-.318.318-.53.106-.212.053-.398-.027-.557-.08-.16-.717-1.728-.983-2.366-.259-.622-.522-.538-.717-.548-.186-.009-.398-.011-.611-.011-.212 0-.557.08-.849.398-.292.318-1.114 1.089-1.114 2.656 0 1.567 1.14 3.082 1.299 3.294.159.212 2.243 3.427 5.435 4.804.759.328 1.352.524 1.814.671.762.242 1.456.208 2.005.126.612-.091 1.884-.77 2.15-1.514.265-.744.265-1.382.186-1.514-.08-.133-.291-.212-.61-.371z"/></svg> Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="dept-group" data-dept="financeiro">
+        <h2 class="dept-group-title">Financeiro — <span class="count">1 pessoa</span></h2>
+        <div class="people-grid">
+          <div class="person-card" tabindex="0" role="button"
+            aria-label="Ver detalhes de Eduardo Ramos"
+            data-name="eduardo ramos" data-title="coordenador financeiro" data-dept="financeiro"
+            data-name-display="Eduardo Ramos" data-title-display="Coordenador Financeiro" data-dept-display="Financeiro"
+            data-phone="(71) 90000-0008" data-email="eduardoramos@gruporepgen.com.br" data-initials="ER" data-palette="orange">
+            <span class="avatar palette-orange">ER</span>
+            <p class="name">Eduardo Ramos</p>
+            <p class="title">Coordenador Financeiro</p>
+            <div><span class="dept-tag">Financeiro</span></div>
+            <a href="https://wa.me/5571900000008?text=Ol%C3%A1!" class="whatsapp-pill" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.703 4.605 1.912 6.472L4 29l7.727-1.874A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.6c-1.98 0-3.833-.55-5.412-1.503l-.388-.23-4.59 1.113 1.135-4.474-.253-.398A9.56 9.56 0 0 1 5.4 15c0-5.85 4.75-10.6 10.601-10.6 5.85 0 10.6 4.75 10.6 10.6 0 5.85-4.75 10.6-10.6 10.6zm5.815-7.94c-.318-.159-1.884-.93-2.176-1.036-.292-.106-.505-.159-.717.16-.212.318-.823 1.036-1.01 1.248-.186.212-.372.239-.69.08-.318-.16-1.343-.495-2.558-1.577-.945-.843-1.583-1.884-1.768-2.202-.186-.318-.02-.49.14-.649.143-.142.318-.372.478-.558.159-.186.212-.318.318-.53.106-.212.053-.398-.027-.557-.08-.16-.717-1.728-.983-2.366-.259-.622-.522-.538-.717-.548-.186-.009-.398-.011-.611-.011-.212 0-.557.08-.849.398-.292.318-1.114 1.089-1.114 2.656 0 1.567 1.14 3.082 1.299 3.294.159.212 2.243 3.427 5.435 4.804.759.328 1.352.524 1.814.671.762.242 1.456.208 2.005.126.612-.091 1.884-.77 2.15-1.514.265-.744.265-1.382.186-1.514-.08-.133-.291-.212-.61-.371z"/></svg> Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL DE DETALHE DA PESSOA -->
+  <div class="modal-overlay" id="personModal">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Fechar">&times;</button>
+      <span class="avatar avatar-lg palette-navy" id="modalAvatar"></span>
+      <p class="name" id="modalName"></p>
+      <p class="title" id="modalTitle"></p>
+      <span class="dept-tag" id="modalDept"></span>
+      <div class="modal-actions">
+        <a href="#" id="modalEmailBtn" class="btn btn-outline-navy btn-block">Enviar e-mail</a>
+        <a href="#" id="modalWhatsBtn" class="btn btn-green btn-block" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      </div>
+      <p class="modal-contact-info" id="modalContactInfo"></p>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo-header.png" alt="Repgen" class="logo-img logo-img-footer">
+      <p>Conectando corretores, empresas e parceiros às melhores soluções em seguros, resseguros e gestão de riscos desde 2013.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Navegação do rodapé">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="linhas-negocio.html">Linhas de Negócio</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="seguradoras.html">Parceiros</a>
+      <a href="seja-parceiro.html">Seja Parceiro</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="quem-e-quem.html">Quem é Quem</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <div class="footer-social" aria-label="Redes sociais da Repgen">
+      <a href="#" aria-label="Repgen no LinkedIn">in</a>
+      <a href="#" aria-label="Repgen no Instagram">ig</a>
+      <a href="#" aria-label="Repgen no Facebook">fb</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span class="ano"></span> Repgen. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- SUBSTITUIR: número real -->
+<a href="https://wa.me/55XXXXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.703 4.605 1.912 6.472L4 29l7.727-1.874A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.6c-1.98 0-3.833-.55-5.412-1.503l-.388-.23-4.59 1.113 1.135-4.474-.253-.398A9.56 9.56 0 0 1 5.4 15c0-5.85 4.75-10.6 10.601-10.6 5.85 0 10.6 4.75 10.6 10.6 0 5.85-4.75 10.6-10.6 10.6zm5.815-7.94c-.318-.159-1.884-.93-2.176-1.036-.292-.106-.505-.159-.717.16-.212.318-.823 1.036-1.01 1.248-.186.212-.372.239-.69.08-.318-.16-1.343-.495-2.558-1.577-.945-.843-1.583-1.884-1.768-2.202-.186-.318-.02-.49.14-.649.143-.142.318-.372.478-.558.159-.186.212-.318.318-.53.106-.212.053-.398-.027-.557-.08-.16-.717-1.728-.983-2.366-.259-.622-.522-.538-.717-.548-.186-.009-.398-.011-.611-.011-.212 0-.557.08-.849.398-.292.318-1.114 1.089-1.114 2.656 0 1.567 1.14 3.082 1.299 3.294.159.212 2.243 3.427 5.435 4.804.759.328 1.352.524 1.814.671.762.242 1.456.208 2.005.126.612-.091 1.884-.77 2.15-1.514.265-.744.265-1.382.186-1.514-.08-.133-.291-.212-.61-.371z"/></svg>
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
