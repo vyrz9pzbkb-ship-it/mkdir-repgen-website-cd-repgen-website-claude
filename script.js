@@ -70,35 +70,6 @@
     }
   });
 
-  // Botão "voltar ao topo"
-  var backToTop = document.getElementById("backToTop");
-
-  if (backToTop) {
-    var backToTopTicking = false;
-
-    function updateBackToTop() {
-      if (window.scrollY > 400) {
-        backToTop.classList.add("visible");
-      } else {
-        backToTop.classList.remove("visible");
-      }
-      backToTopTicking = false;
-    }
-
-    window.addEventListener("scroll", function () {
-      if (!backToTopTicking) {
-        requestAnimationFrame(updateBackToTop);
-        backToTopTicking = true;
-      }
-    });
-
-    updateBackToTop();
-
-    backToTop.addEventListener("click", function () {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
-
   // Animação de entrada ao rolar a página (fade + slide up)
   var fadeEls = document.querySelectorAll(".fade-up");
 
