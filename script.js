@@ -177,6 +177,31 @@
       });
     });
 
+    // Ao chegar com um hash na URL (ex: quem-e-quem.html#corporativo), seleciona
+    // o filtro do departamento correspondente e rola suavemente até a seção.
+    function activateDeptFromHash() {
+      var hash = window.location.hash.replace("#", "");
+      if (!hash) return;
+
+      var targetPill = document.querySelector('.filter-pill[data-filter="' + hash + '"]');
+      if (targetPill) {
+        filterPills.forEach(function (p) { p.classList.remove("active"); });
+        targetPill.classList.add("active");
+        activeFilter = hash;
+        applyFilters();
+      }
+
+      var targetGroup = document.getElementById(hash);
+      if (targetGroup) {
+        setTimeout(function () {
+          targetGroup.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 60);
+      }
+    }
+
+    activateDeptFromHash();
+    window.addEventListener("hashchange", activateDeptFromHash);
+
     // Modal de detalhe da pessoa
     var modalOverlay = document.getElementById("personModal");
     var modalAvatar = document.getElementById("modalAvatar");

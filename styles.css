@@ -1093,6 +1093,7 @@ body.menu-open {
 
 .dept-group {
   margin-bottom: 48px;
+  scroll-margin-top: 96px;
 }
 
 .dept-group-title {

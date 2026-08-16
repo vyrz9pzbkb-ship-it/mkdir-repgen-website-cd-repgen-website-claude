@@ -66,7 +66,7 @@
         <button type="button" class="filter-pill" data-filter="diretoria">Diretoria</button>
         <button type="button" class="filter-pill" data-filter="desenvolvimento-comercial">Desenvolvimento Comercial</button>
         <button type="button" class="filter-pill" data-filter="seguros-de-pessoas">Seguros de Pessoas</button>
-        <button type="button" class="filter-pill" data-filter="seguros-propriedades">Seguros de Propriedades/Danos, Responsabilidade e Riscos Financeiros</button>
+        <button type="button" class="filter-pill" data-filter="seguros-de-propriedades-danos-responsabilidade-e-riscos-financeiros">Seguros de Propriedades/Danos, Responsabilidade e Riscos Financeiros</button>
         <button type="button" class="filter-pill" data-filter="corporativo">Corporativo</button>
         <button type="button" class="filter-pill" data-filter="transporte">Transporte</button>
         <button type="button" class="filter-pill" data-filter="beneficios">Benefícios</button>
@@ -77,7 +77,7 @@
         <button type="button" class="filter-pill" data-filter="tecnologia">Tecnologia</button>
       </div>
 
-      <div class="dept-group" data-dept="diretoria">
+      <div class="dept-group" id="diretoria" data-dept="diretoria">
         <h2 class="dept-group-title">Diretoria — <span class="count">4 pessoas</span></h2>
         <div class="people-grid">
           <div class="person-card" tabindex="0" role="button"
@@ -138,7 +138,7 @@
           </div>
         </div>
       </div>
-      <div class="dept-group" data-dept="desenvolvimento-comercial">
+      <div class="dept-group" id="desenvolvimento-comercial" data-dept="desenvolvimento-comercial">
         <h2 class="dept-group-title">Desenvolvimento Comercial — <span class="count">1 pessoa</span></h2>
         <div class="people-grid">
           <div class="person-card" tabindex="0" role="button"
@@ -158,7 +158,7 @@
           </div>
         </div>
       </div>
-      <div class="dept-group" data-dept="seguros-de-pessoas">
+      <div class="dept-group" id="seguros-de-pessoas" data-dept="seguros-de-pessoas">
         <h2 class="dept-group-title">Seguros de Pessoas — <span class="count">1 pessoa</span></h2>
         <div class="people-grid">
           <div class="person-card" tabindex="0" role="button"
@@ -178,12 +178,12 @@
           </div>
         </div>
       </div>
-      <div class="dept-group" data-dept="seguros-propriedades">
+      <div class="dept-group" id="seguros-de-propriedades-danos-responsabilidade-e-riscos-financeiros" data-dept="seguros-de-propriedades-danos-responsabilidade-e-riscos-financeiros">
         <h2 class="dept-group-title">Seguros de Propriedades/Danos, Responsabilidade e Riscos Financeiros — <span class="count">6 pessoas</span></h2>
         <div class="people-grid">
           <div class="person-card" tabindex="0" role="button"
             aria-label="Ver detalhes de Ademar Santana"
-            data-name="ademar santana" data-title="coordenador massificados" data-dept="seguros-propriedades"
+            data-name="ademar santana" data-title="coordenador massificados" data-dept="seguros-de-propriedades-danos-responsabilidade-e-riscos-financeiros"
             data-name-display="Ademar Santana" data-title-display="Coordenador Massificados" data-dept-display="Seguros de Propriedades/Danos, Responsabilidade e Riscos Financeiros"
             data-phone="(71) 99635-7955" data-email="ademarsantana@gruporepgen.com.br" data-initials="AS" data-palette="navy">
             <span class="avatar palette-navy">AS</span>
@@ -198,7 +198,7 @@
           </div>
           <div class="person-card" tabindex="0" role="button"
             aria-label="Ver detalhes de Zelio Junior"
-            data-name="zelio junior" data-title="executivo de negócios interior da bahia" data-dept="seguros-propriedades"
+            data-name="zelio junior" data-title="executivo de negócios interior da bahia" data-dept="seguros-de-propriedades-danos-responsabilidade-e-riscos-financeiros"
             data-name-display="Zelio Junior" data-title-display="Executivo de Negócios interior da Bahia" data-dept-display="Seguros de Propriedades/Danos, Responsabilidade e Riscos Financeiros"
             data-phone="(75) 99827-5504" data-email="zeliojunior@gruporepgen.com.br" data-initials="ZJ" data-palette="orange">
             <span class="avatar palette-orange">ZJ</span>
@@ -213,7 +213,7 @@
           </div>
           <div class="person-card" tabindex="0" role="button"
             aria-label="Ver detalhes de Ana Rita"
-            data-name="ana rita" data-title="executiva de negócios" data-dept="seguros-propriedades"
+            data-name="ana rita" data-title="executiva de negócios" data-dept="seguros-de-propriedades-danos-responsabilidade-e-riscos-financeiros"
             data-name-display="Ana Rita" data-title-display="Executiva de Negócios" data-dept-display="Seguros de Propriedades/Danos, Responsabilidade e Riscos Financeiros"
             data-phone="(71) 99997-5203" data-email="anaritasouza@gruporepgen.com.br" data-initials="AR" data-palette="blue">
             <span class="avatar palette-blue">AR</span>
@@ -228,7 +228,7 @@
           </div>
           <div class="person-card" tabindex="0" role="button"
             aria-label="Ver detalhes de Zirlana Barreto"
-            data-name="zirlana barreto" data-title="executiva de negócios" data-dept="seguros-propriedades"
+            data-name="zirlana barreto" data-title="executiva de negócios" data-dept="seguros-de-propriedades-danos-responsabilidade-e-riscos-financeiros"
             data-name-display="Zirlana Barreto" data-title-display="Executiva de Negócios" data-dept-display="Seguros de Propriedades/Danos, Responsabilidade e Riscos Financeiros"
             data-phone="(75) 99865-9887" data-email="zirlanabarreto@gruporepgen.com.br" data-initials="ZB" data-palette="navy">
             <span class="avatar palette-navy">ZB</span>
@@ -243,7 +243,7 @@
           </div>
           <div class="person-card" tabindex="0" role="button"
             aria-label="Ver detalhes de Silvia Gonçalves"
-            data-name="silvia gonçalves" data-title="executiva de negócios pernambuco" data-dept="seguros-propriedades"
+            data-name="silvia gonçalves" data-title="executiva de negócios pernambuco" data-dept="seguros-de-propriedades-danos-responsabilidade-e-riscos-financeiros"
             data-name-display="Silvia Gonçalves" data-title-display="Executiva de Negócios Pernambuco" data-dept-display="Seguros de Propriedades/Danos, Responsabilidade e Riscos Financeiros"
             data-phone="(81) 98145-2740" data-email="silviagoncalves@gruporepgen.com.br" data-initials="SG" data-palette="orange">
             <span class="avatar palette-orange">SG</span>
@@ -258,7 +258,7 @@
           </div>
           <div class="person-card" tabindex="0" role="button"
             aria-label="Ver detalhes de Eduardo Arruda"
-            data-name="eduardo arruda" data-title="executivo de negócios pernambuco" data-dept="seguros-propriedades"
+            data-name="eduardo arruda" data-title="executivo de negócios pernambuco" data-dept="seguros-de-propriedades-danos-responsabilidade-e-riscos-financeiros"
             data-name-display="Eduardo Arruda" data-title-display="Executivo de Negócios Pernambuco" data-dept-display="Seguros de Propriedades/Danos, Responsabilidade e Riscos Financeiros"
             data-phone="(81) 97114-2613" data-email="eduardoarruda@gruporepgen.com.br" data-initials="EA" data-palette="blue">
             <span class="avatar palette-blue">EA</span>
@@ -273,7 +273,7 @@
           </div>
         </div>
       </div>
-      <div class="dept-group" data-dept="corporativo">
+      <div class="dept-group" id="corporativo" data-dept="corporativo">
         <h2 class="dept-group-title">Corporativo — <span class="count">7 pessoas</span></h2>
         <div class="people-grid">
           <div class="person-card" tabindex="0" role="button"
@@ -383,7 +383,7 @@
           </div>
         </div>
       </div>
-      <div class="dept-group" data-dept="transporte">
+      <div class="dept-group" id="transporte" data-dept="transporte">
         <h2 class="dept-group-title">Transporte — <span class="count">3 pessoas</span></h2>
         <div class="people-grid">
           <div class="person-card" tabindex="0" role="button"
@@ -433,7 +433,7 @@
           </div>
         </div>
       </div>
-      <div class="dept-group" data-dept="beneficios">
+      <div class="dept-group" id="beneficios" data-dept="beneficios">
         <h2 class="dept-group-title">Benefícios — <span class="count">1 pessoa</span></h2>
         <div class="people-grid">
           <div class="person-card" tabindex="0" role="button"
@@ -452,7 +452,7 @@
           </div>
         </div>
       </div>
-      <div class="dept-group" data-dept="massificados-afinidades">
+      <div class="dept-group" id="massificados-afinidades" data-dept="massificados-afinidades">
         <h2 class="dept-group-title">Massificados / Afinidades — <span class="count">2 pessoas</span></h2>
         <div class="people-grid">
           <div class="person-card" tabindex="0" role="button"
@@ -487,7 +487,7 @@
           </div>
         </div>
       </div>
-      <div class="dept-group" data-dept="sinistro">
+      <div class="dept-group" id="sinistro" data-dept="sinistro">
         <h2 class="dept-group-title">Sinistro — <span class="count">2 pessoas</span></h2>
         <div class="people-grid">
           <div class="person-card" tabindex="0" role="button"
@@ -521,7 +521,7 @@
           </div>
         </div>
       </div>
-      <div class="dept-group" data-dept="marketing">
+      <div class="dept-group" id="marketing" data-dept="marketing">
         <h2 class="dept-group-title">Marketing — <span class="count">1 pessoa</span></h2>
         <div class="people-grid">
           <div class="person-card" tabindex="0" role="button"
@@ -541,7 +541,7 @@
           </div>
         </div>
       </div>
-      <div class="dept-group" data-dept="adm-financeiro">
+      <div class="dept-group" id="adm-financeiro" data-dept="adm-financeiro">
         <h2 class="dept-group-title">ADM / Financeiro — <span class="count">4 pessoas</span></h2>
         <div class="people-grid">
           <div class="person-card" tabindex="0" role="button"
@@ -603,7 +603,7 @@
           </div>
         </div>
       </div>
-      <div class="dept-group" data-dept="tecnologia">
+      <div class="dept-group" id="tecnologia" data-dept="tecnologia">
         <h2 class="dept-group-title">Tecnologia — <span class="count">3 pessoas</span></h2>
         <div class="people-grid">
           <div class="person-card" tabindex="0" role="button"
