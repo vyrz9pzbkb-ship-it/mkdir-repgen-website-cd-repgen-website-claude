@@ -882,6 +882,13 @@ body.menu-open {
   object-fit: cover;
 }
 
+.service-hub-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(10, 18, 38, 0.72) 0%, rgba(10, 18, 38, 0.4) 100%);
+  pointer-events: none;
+}
+
 .service-hub-badge {
   position: absolute;
   bottom: -18px;
@@ -1311,6 +1318,23 @@ body.menu-open {
   object-fit: cover;
   filter: grayscale(100%);
   transition: filter var(--transition), transform var(--transition);
+}
+
+.blog-card-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 18, 38, 0.1) 0%, rgba(10, 18, 38, 0.6) 100%);
+  pointer-events: none;
+}
+
+.category-pill-overlay {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 1;
+  margin-bottom: 0;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--color-navy-900);
 }
 
 .blog-card:hover .blog-card-img img {

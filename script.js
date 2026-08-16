@@ -55,6 +55,21 @@
     }
   });
 
+  // Fotos ilustrativas (blog, serviços): se o link externo não carregar, troca pela imagem local
+  document.querySelectorAll("img[data-fallback]").forEach(function (img) {
+    function useLocalFallback() {
+      var fallback = img.getAttribute("data-fallback");
+      if (fallback && img.getAttribute("src") !== fallback) {
+        img.src = fallback;
+      }
+    }
+    if (img.complete) {
+      if (img.naturalWidth === 0) useLocalFallback();
+    } else {
+      img.addEventListener("error", useLocalFallback, { once: true });
+    }
+  });
+
   // Animação de entrada ao rolar a página (fade + slide up)
   var fadeEls = document.querySelectorAll(".fade-up");
 
