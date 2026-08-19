@@ -1790,10 +1790,6 @@ body.menu-open {
     padding: 64px 0;
   }
 
-  .insurer-grid {
-    grid-template-columns: 1fr;
-  }
-
   .line-card {
     padding: 28px 22px;
   }
@@ -1836,5 +1832,22 @@ body.menu-open {
   .whatsapp-float svg {
     width: 26px;
     height: 26px;
+  }
+
+  .insurer-grid {
+    gap: 12px;
+  }
+
+  .insurer-card {
+    padding: 18px 12px;
+    min-height: 76px;
+  }
+}
+
+/* Only the narrowest phones drop the insurer grid to a single column;
+   two columns stay comfortable down to this width. */
+@media (max-width: 360px) {
+  .insurer-grid {
+    grid-template-columns: 1fr;
   }
 }
