@@ -1486,8 +1486,12 @@ body.menu-open {
 
 .insurer-logo {
   max-height: 48px;
+  max-width: 85%;
   width: auto;
+  height: auto;
   object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .insurer-fallback {

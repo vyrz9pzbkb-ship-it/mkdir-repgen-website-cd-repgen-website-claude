@@ -38,7 +38,7 @@
     });
   }
 
-  // Logos das seguradoras: se o arquivo em logos/ ainda não existir, mostra o nome em texto
+  // Logos das seguradoras: se o arquivo em assets/logos/ ainda não existir, mostra o nome em texto
   document.querySelectorAll(".insurer-logo").forEach(function (img) {
     function showFallback() {
       img.style.display = "none";
